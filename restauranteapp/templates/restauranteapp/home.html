@@ -1,0 +1,14 @@
+{% extends 'restauranteapp/base.html'%}
+
+{% block head%}
+{% load static %}
+{% endblock%}
+
+{% block content%}
+    <h1>Lista de Ingredientes</h1>
+    <h2> <a href="{% url 'ingredientes' %}">adicionar Ingredientes +</a></h2>
+    <h2> <a href="{% url 'menuitens' %}">adicionar produto do menu +</a></h2>
+    <img src="{% static 'restauranteapp\img1.jpeg' %}" alt="Django Djitney Logo"
+    width="80px"/>
+    <a href="{% url 'home' %}">{{botao}}</a>
+{% endblock%}

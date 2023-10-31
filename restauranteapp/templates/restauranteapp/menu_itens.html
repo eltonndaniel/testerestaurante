@@ -1,0 +1,22 @@
+{% extends 'restauranteapp/base.html'%}
+
+{% block head%}
+{% endblock%}
+{% block content%}
+    <h1>Lista de Ingredientes</h1>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Quatidade</th>
+            <th>Preco</th>
+        </tr>
+        {% for item in itens%}
+        <tr>
+            <td>{{item.nome | title}}</td>
+            <td>{{item.preco}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h2> <a href="{% url 'ingredientescreate' %}">adicionar produto +</a></h2>
+    <a href="{% url 'home' %}"><button>{{botao}}</button></a>
+{% endblock%}

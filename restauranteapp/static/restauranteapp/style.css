@@ -1,0 +1,25 @@
+body{
+    
+    background-color: beige;
+    font-family: "Oxygen", sans-serif;
+    color: rgb(53, 46, 34);
+}
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    align-items: center;
+    background-color: rgb(206, 218, 166);
+}
+h1{
+    align-items: center;
+    color: rgb(53, 46, 34);
+    font-family: sans-serif;
+}
+a {
+    color: green;
+}
+footer{
+    background-color: white;
+    text-align: center;
+}
